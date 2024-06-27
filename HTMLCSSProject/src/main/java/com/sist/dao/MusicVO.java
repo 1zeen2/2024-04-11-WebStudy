@@ -15,6 +15,6 @@ import lombok.Setter;
 @Getter
 @Setter
 public class MusicVO {
-    private int mno,idcrement;
+    private int mno,idcrement;  
     private String title,singer,album,poster,state;
 }
