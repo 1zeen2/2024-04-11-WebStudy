@@ -21,7 +21,7 @@ public class MainClass {
 		{
 			int k=1;
 			for(int i=1;i<=4;i++)
-			{
+			{  
 				Document doc=Jsoup.connect("https://www.genie.co.kr/chart/top200?ditc=D&ymd=20240627&hh=15&rtm=Y&pg="+i).get();
 				Elements title=doc.select("table.list-wrap td.info a.title");
 				Elements singer=doc.select("table.list-wrap td.info a.artist"); 
