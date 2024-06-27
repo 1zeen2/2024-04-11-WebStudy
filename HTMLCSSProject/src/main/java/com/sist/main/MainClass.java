@@ -24,7 +24,7 @@ public class MainClass {
 			{
 				Document doc=Jsoup.connect("https://www.genie.co.kr/chart/top200?ditc=D&ymd=20240627&hh=15&rtm=Y&pg="+i).get();
 				Elements title=doc.select("table.list-wrap td.info a.title");
-				Elements singer=doc.select("table.list-wrap td.info a.artist");
+				Elements singer=doc.select("table.list-wrap td.info a.artist"); 
 				Elements album=doc.select("table.list-wrap td.info a.albumtitle");
 				Elements poster=doc.select("table.list-wrap a.cover img");
 				Elements etc=doc.select("table.list-wrap span.rank");
